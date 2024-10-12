@@ -1,0 +1,110 @@
+/**
+ * ----------------Portfolio----------------
+ *
+ * @format
+ */
+.Portfolio {
+  /* border: 1px solid green; */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: scroll;
+  width: 84%;
+  height: 100vh;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.projects {
+  /* margin-top: 50rem; */
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+.projects .work {
+  position: relative;
+  margin-top: 0.5rem;
+}
+.projects div img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.overlay {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgb(86, 155, 196));
+  position: absolute;
+  border-radius: 10px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+}
+.overlay div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  margin-top: 2rem;
+  background-color: #fff;
+  color: #000;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.work:hover img {
+  transform: scaleY(1.1);
+}
+.work:hover .overlay {
+  height: 100%;
+  transform: scaleY(1.1);
+}
+.btn {
+  display: flex;
+  padding: 0.5rem 1.4rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 10px;
+  transition: 1s ease;
+}
+.btn:hover {
+  transform: scale(1.1);
+  background-color: rgba(86, 156, 196, 0.61);
+}
+
+@media screen and (max-width: 900px) {
+  .Portfolio {
+    width: fit-content;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.3rem;
+    width: 78%;
+    padding: 0rem;
+  }
+  .container {
+    width: 100%;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+}

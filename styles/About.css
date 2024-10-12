@@ -1,0 +1,33 @@
+/** @format */
+
+.about {
+  width: 55%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.767);
+}
+.about p {
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .about {
+    width: 70%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: justify;
+    margin-top: 2.2rem;
+    overflow: scroll;
+    padding-top: 0;
+  }
+  .about h1 {
+    align-self: flex-start;
+    font-size: 18px;
+    /* justify-self: flex-start; */
+  }
+  .about p {
+    line-height: 1rem;
+  }
+}

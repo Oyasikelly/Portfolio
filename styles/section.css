@@ -1,0 +1,68 @@
+/** @format */
+
+section {
+  /* border: 1px solid white; */
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(9, 9, 15, 0.201),
+      rgba(9, 9, 15, 0.229)
+    ),
+    url(/image/suc-div.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  height: 86%;
+  position: absolute;
+  top: 4.6rem;
+  z-index: 100;
+  color: white;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+section h1,
+h3,
+p {
+  /* border: 1px solid white; */
+}
+main h3 {
+  margin-top: -1rem;
+  color: rgb(86, 155, 196);
+}
+
+#Home p {
+  max-width: 50%;
+}
+
+.btns {
+  width: fit-content;
+  display: flex;
+  gap: 2rem;
+}
+.hireBtn {
+  /* width: 3rem; */
+  padding: 0.5rem 1.8rem;
+  background-color: rgb(86, 155, 196);
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+  transition: opacity 0.5s ease-in;
+}
+.talkBtn {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid rgb(86, 155, 196);
+  background: transparent;
+  color: rgb(86, 155, 196);
+  border-radius: 0.2rem;
+  transition: background-color 0.4s ease-in;
+}
+.hireBtn:hover {
+  opacity: 0.5;
+}
+.talkBtn:hover {
+  background-color: rgb(86, 155, 196);
+  color: rgb(9, 9, 15);
+}

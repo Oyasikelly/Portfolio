@@ -1,0 +1,23 @@
+/** @format */
+
+.Home {
+}
+
+@media screen and (max-width: 900px) {
+  .Home {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    padding: 0;
+    width: 78%;
+    font-size: small;
+    /* align-items: center; */
+  }
+
+  .Home button {
+    padding: 0.5rem 1rem;
+  }
+}

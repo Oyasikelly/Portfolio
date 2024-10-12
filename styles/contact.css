@@ -1,0 +1,118 @@
+/** @format */
+.Contact {
+  /* border: 1px solid green; */
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+.contactInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 84%;
+  font-size: 13px;
+  line-height: 1.4rem;
+}
+.contactInfo h3 {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.contactInfo .col-1 {
+  display: block;
+  flex-basis: 30%;
+}
+.contactInfo .col-1 p i {
+  padding-right: 0.4rem;
+}
+.contactInfo .col-1 .social-icon {
+  margin-top: 1rem;
+}
+.contactInfo .col-1 .social-icon i {
+  margin: 0 0.5rem;
+  font-size: 2rem;
+  transition: 0.7s;
+}
+.contactInfo .social-icon i:hover {
+  transform: scale(1.1);
+  color: rgb(86, 155, 196);
+}
+.contactInfo .col-2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 60%;
+}
+.contactInfo .col-2 input {
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  padding: 0 1rem;
+  color: #fff;
+  outline: none;
+  background-color: rgba(34, 33, 33, 0.726);
+}
+.contactInfo .col-2 textarea {
+  background-color: rgba(34, 33, 33, 0.726);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.btn-2 {
+  background-color: rgb(86, 155, 196);
+  width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.col-2 button {
+  width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(86, 155, 196);
+  cursor: pointer;
+  border: none;
+}
+.btn-2 i {
+  margin-left: 0.3rem;
+}
+.submitTxt {
+  color: green;
+}
+.copyright {
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  .Contact {
+    width: 78%;
+    /* display: flex; */
+
+    flex-direction: column;
+    padding-top: 0rem;
+    margin-top: 1.3rem;
+    overflow: scroll;
+  }
+  .Contact::-webkit-scrollbar {
+    display: none;
+  }
+  .contactInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contactInfo .col-2 {
+    margin-top: 1rem;
+  }
+  .social-icon {
+    /* width: 50%; */
+    font-size: 10px;
+  }
+  .social-icon i .teal-color {
+    font-size: 10px;
+    font-weight: 300;
+  }
+}
