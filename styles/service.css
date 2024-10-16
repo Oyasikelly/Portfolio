@@ -1,7 +1,7 @@
 /** @format */
-.Service {
+/* .Service {
   /* border: 1px solid green; */
-}
+/* } */
 .service {
   width: 84%;
   display: grid;
@@ -13,8 +13,8 @@
 .service::-webkit-scrollbar {
   display: none;
 }
-.serviceList {
-}
+/* .serviceList {
+} */
 .serviceitem {
   text-align: center;
   padding: 0.5rem 1rem;
@@ -37,15 +37,15 @@
 @media screen and (max-width: 900px) {
   .Service {
     margin-top: 2rem;
-    width: 70%;
+    width: 78%;
   }
   .service {
     width: fit-content;
-    /* border: 1px solid red; */
     overflow: scroll;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 2rem;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -49,8 +49,11 @@ h2 {
   right: 0;
   bottom: 0;
   padding-left: 2rem;
+  overflow: scroll;
 }
-
+.menue::-webkit-scrollbar {
+  display: none;
+}
 .menue-list {
   width: fit-content;
   /* border: 1px solid red; */

@@ -38,11 +38,11 @@
     <div class="Container">
       <div class="menue" onclick="handleMenueUndisplay()">
         <ul class="menue-list">
-          <a id="Home" href="#" class="nav-link">Home</a>
-          <a id="About" href="#" class="nav-link">About</a>
-          <a id="Service" href="#" class="nav-link">Service</a>
-          <a id="Portfolio" href="#" class="nav-link">Portfolio</a>
-          <a id="Contact" href="#" class="nav-link">Contact</a>
+          <a id="Home" href="#Home" class="nav-link">Home</a>
+          <a id="About" href="#About" class="nav-link">About</a>
+          <a id="Service" href="#Service" class="nav-link">Service</a>
+          <a id="Portfolio" href="#Portfolio" class="nav-link">Portfolio</a>
+          <a id="Contact" href="#Contact" class="nav-link">Contact</a>
         </ul>
       </div>
       <header>
@@ -63,7 +63,7 @@
               <div class="typeText">
                 <h1>Hi, I'm Suc-Div</h1>
                 <h3>Frontend Developer</h3>
-                <p>
+                <h3 style="color: rgba(255, 255, 255, 0.767)" class="homeText">
                   I’m Suc-Div,<br />
                   a web developer with a passion for crafting dynamic websites
                   that solve real-world problems. From sleek interfaces to
@@ -72,14 +72,18 @@
                   strong focus on innovation, I build solutions that not only
                   meet needs but exceed expectations. Let’s create something
                   impactful together.
-                </p>
+                </h3>
               </div>
             </div>
             <span id="typed"></span>
 
             <div class="btns">
-              <button class="hireBtn">Hire Me</button>
-              <button class="talkBtn">Let's Talk</button>
+              <a href="#Contact">
+                <button class="hireBtn">Hire Me</button>
+              </a>
+              <a href="#Porfolio">
+                <button class="talkBtn">Let's Talk</button>
+              </a>
             </div>
           </div>
         </section>

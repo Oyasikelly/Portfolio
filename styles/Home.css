@@ -1,6 +1,7 @@
 /** @format */
 
-.Home {
+.Home .homeText {
+  width: 80%;
 }
 
 @media screen and (max-width: 900px) {

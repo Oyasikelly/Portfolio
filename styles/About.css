@@ -11,16 +11,19 @@
 
 @media screen and (max-width: 900px) {
   .about {
-    width: 70%;
+    width: 78%;
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    text-align: justify;
+    text-align: center;
     margin-top: 2.2rem;
     overflow: scroll;
     padding-top: 0;
+  }
+  .about::-webkit-scrollbar {
+    display: none;
   }
   .about h1 {
     align-self: flex-start;
